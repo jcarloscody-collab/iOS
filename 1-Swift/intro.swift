@@ -96,3 +96,15 @@ for nome in pontuacao.keys {
 for pontos in pontuacao.values {
     print(pontos)
 }
+
+struct Conta {
+    var saldo = 0.0
+
+    mutating func sacar(_ valor: Double) {
+        saldo -= valor
+    }
+
+    mutating func depositar(_ valor: Double) {
+        saldo += valor
+    }
+}
